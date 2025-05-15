@@ -5,6 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .nav-container {
   width: 100%;
   display: flex;
@@ -99,6 +100,11 @@
       background-color: rgb(185, 185, 185);
       color: #fff;
       cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    i:hover {
+      background-color: #555;
+      color: #fff;
     }
   }
 
@@ -106,13 +112,55 @@
     width: 330px;
     height: 270px;
     background-color: rgb(137, 137, 137);
+    object-fit: cover;
   }
 
   .money {
     margin-top: 10px;
     gap: 10px;
+    display: flex;
     span {
       color: rgb(189, 189, 189);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-section {
+    gap: 20px;
+
+    img {
+      width: 280px;
+      height: 230px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .card-section {
+    gap: 15px;
+
+    img {
+      width: 220px;
+      height: 180px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    .card {
+      width: 90%; 
+      max-width: 350px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }
