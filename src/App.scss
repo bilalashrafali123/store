@@ -6,51 +6,53 @@
 }
 
 .nav-container {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 80px;
-  background-color: #eeeeee;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: transparent;
   position: relative;
   z-index: 10;
-  
+  padding-top: 20px;
 
   .nav {
-    width: 70%;
+    width: 100%;
+    max-width: 1200px;              
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 25px 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
 
-    .nav-logo h2 {
-      font-size: 24px;
-      font-weight: bold;
+  .nav-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 15px;
+
+    a {
+      text-decoration: none;
       color: #333;
-    }
+      font-size: 16px;
 
-    .nav-links {
-      display: flex;
-      gap: 15px;
-
-      a {
-        text-decoration: none;
-        color: #333;
-        font-size: 16px;
-
-        &:hover {
-          color: orange;
-        }
+      &:hover {
+        color: orange;
       }
     }
+  }
 
-    .hamburger {
-      display: none;
-      font: size 15px;
-      cursor: pointer;
-      color: #333;
-      text-align: end;
-    }
+  .hamburger {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    text-align: end;
   }
 }
 
@@ -70,6 +72,7 @@
 @media (max-width: 768px) {
   .nav-container {
     .nav {
+      flex-direction: row;
       .nav-links {
         display: none;
       }
