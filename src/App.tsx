@@ -38,35 +38,7 @@ function App() {
       </div>
       <div className="card-section">
         <div className="card" style={{ width: "20rem" }}>
-          <img src={"/src/p1.jpg"} className="card-img-top" alt="..." />
-          <div className="card-body"></div>
-          <p className="card-text">
-            Addidas New Hammer sole <br /> for sports person
-          </p>
-          <p className="money">
-            $150
-            <span>
-              <del>$210</del>
-            </span>
-          </p>
-          <div className="icons">
-            <span>
-              <i className="fa-solid fa-cart-shopping"></i>
-            </span>
-            <span>
-              <i className="fa-solid fa-heart"></i>
-            </span>
-            <span>
-              <i className="fa-solid fa-bookmark"></i>
-            </span>
-            <span>
-              <i className="fa-solid fa-thumbs-up"></i>
-            </span>
-          </div>
-        </div>
-
-        <div className="card" style={{ width: "20rem" }}>
-          <img src={"/src/p2.jpg"} className="card-img-top" alt="..." />
+          <img src={"/src/p1.jpg"} className="card-img-top" alt="card-img" />
           <div className="card-body"></div>
           <p className="card-text">
             Addidas New Hammer sole <br /> for sports person
@@ -93,7 +65,7 @@ function App() {
           </div>
         </div>
         <div className="card" style={{ width: "20rem" }}>
-          <img src={"/src/p3.jpg"} className="card-img-top" alt="..." />
+          <img src={"/src/p2.jpg"} className="card-img-top" alt="card-img" />
           <div className="card-body"></div>
           <p className="card-text">
             Addidas New Hammer sole <br /> for sports person
@@ -120,7 +92,7 @@ function App() {
           </div>
         </div>
         <div className="card" style={{ width: "20rem" }}>
-          <img src={"/src/p4.jpg"} className="card-img-top" alt="..." />
+          <img src={"/src/p3.jpg"} className="card-img-top" alt="card-img" />
           <div className="card-body"></div>
           <p className="card-text">
             Addidas New Hammer sole <br /> for sports person
@@ -147,7 +119,7 @@ function App() {
           </div>
         </div>
         <div className="card" style={{ width: "20rem" }}>
-          <img src={"/src/p5.jpg"} className="card-img-top" alt="..." />
+          <img src={"/src/p4.jpg"} className="card-img-top" alt="card-img" />
           <div className="card-body"></div>
           <p className="card-text">
             Addidas New Hammer sole <br /> for sports person
@@ -174,7 +146,7 @@ function App() {
           </div>
         </div>
         <div className="card" style={{ width: "20rem" }}>
-          <img src={"/src/p6.jpg"} className="card-img-top" alt="..." />
+          <img src={"/src/p5.jpg"} className="card-img-top" alt="card-img" />
           <div className="card-body"></div>
           <p className="card-text">
             Addidas New Hammer sole <br /> for sports person
@@ -201,7 +173,7 @@ function App() {
           </div>
         </div>
         <div className="card" style={{ width: "20rem" }}>
-          <img src={"/src/p7.jpg"} className="card-img-top" alt="..." />
+          <img src={"/src/p6.jpg"} className="card-img-top" alt="card-img" />
           <div className="card-body"></div>
           <p className="card-text">
             Addidas New Hammer sole <br /> for sports person
@@ -228,7 +200,34 @@ function App() {
           </div>
         </div>
         <div className="card" style={{ width: "20rem" }}>
-          <img src={"/src/p8.jpg"} className="card-img-top" alt="..." />
+          <img src={"/src/p7.jpg"} className="card-img-top" alt="card-img" />
+          <div className="card-body"></div>
+          <p className="card-text">
+            Addidas New Hammer sole <br /> for sports person
+          </p>
+          <p className="money">
+            $150
+            <span>
+              <del>$210</del>
+            </span>
+          </p>
+          <div className="icons">
+            <span>
+              <i className="fa-solid fa-cart-shopping"></i>
+            </span>
+            <span>
+              <i className="fa-solid fa-heart"></i>
+            </span>
+            <span>
+              <i className="fa-solid fa-bookmark"></i>
+            </span>
+            <span>
+              <i className="fa-solid fa-thumbs-up"></i>
+            </span>
+          </div>
+        </div>
+        <div className="card" style={{ width: "20rem" }}>
+          <img src={"/src/p8.jpg"} className="card-img-top" alt="card-img" />
           <div className="card-body"></div>
           <p className="card-text">
             Addidas New Hammer sole <br /> for sports person
@@ -257,7 +256,7 @@ function App() {
       </div>
       <footer>
         <div className="footer-container">
-          <div className="footer-box about">
+          <div className="footer-box">
             <h3>About Us</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -288,7 +287,7 @@ function App() {
           <div className="footer-box follow">
             <h3>Follow Us</h3>
             <p>Let us be social</p>
-            <div className="social-icons">
+            <div className="footer-icons">
               <a href="#"><i className="fa-brands fa-facebook"></i></a>
               <a href="#"><i className="fa-brands fa-twitter"></i></a>
               <a href="#"><i className="fa-brands fa-github"></i></a>
@@ -296,7 +295,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="footer-bottom">
+        <div className="footer-copyright-section">
           <p>
             Copyright ©2025 All rights reserved | This template is made with{" "}
             <span>♡</span> by <a href="#">Colorlib</a>
