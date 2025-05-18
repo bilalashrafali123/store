@@ -9,6 +9,8 @@ import Contact from "./components/Contact";
 import Order from "./components/Order";
 import Shop from "./components/Shop";
 import Login from "./components/Login";
+import Pages from "./components/Pages";
+
 
 function App() {
   return (
@@ -22,6 +24,11 @@ function App() {
         <Route path="/order" element={<Order />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/pages" element={<Pages />} />
+     
+
+
+
       </Routes>
       <Footer />
     </>

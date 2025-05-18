@@ -1,0 +1,290 @@
+.cart-wrapper {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  margin-top: 110px;
+
+  th,
+  td {
+    text-align: right;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+  }
+
+  th {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    img {
+      width: 80px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+  }
+
+  input {
+    width: 50px;
+    padding: 4px;
+    text-align: center;
+  }
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  .update {
+    background: #e6eff1;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .coupon {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      min-width: 200px;
+    }
+
+    .apply {
+      background: orange;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+    }
+
+    .close {
+      background: #e6eff1;
+      padding: 10px 20px;
+      border: none;
+    }
+  }
+}
+
+.cart-summary {
+  // border: 1px solid #eee;
+  padding: 20px;
+  margin-bottom: 30px;
+
+  .summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .summary-row {
+      display: flex;
+      justify-content: end;
+      gap: 40px;
+    }
+
+    .shipping-row {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .shipping-options {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    .end {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .summary-selects {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-end;
+
+      select,
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 300px;
+      }
+
+      button {
+        background: #e6eff1;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.checkout-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: end;
+
+  .continue {
+    background: #e6eff1;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .checkout {
+    background: orange;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-table {
+    margin-top: 110px;
+
+    th,
+    td {
+      font-size: 13px;
+      padding: 10px;
+    }
+
+    .product {
+      flex-direction: column;
+      align-items: flex-start;
+
+      img {
+        width: 100%;
+        max-width: 100px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .cart-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .coupon {
+      justify-content: center;
+
+      input {
+        width: 100%;
+        min-width: unset;
+      }
+
+      .close {
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      .apply {
+        width: 100%;
+      }
+    }
+
+    .update {
+      width: 100%;
+    }
+  }
+
+  .cart-summary {
+    .summary-details {
+      .summary-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .summary-selects {
+        width: 100%;
+        align-items: stretch;
+
+        select,
+        input {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .checkout-buttons {
+    flex-direction: column;
+    align-items: center;
+
+    .continue,
+    .checkout {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-wrapper {
+    padding: 20px 10px;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .cart-actions .coupon input {
+    min-width: 100%;
+  }
+
+  .summary-selects {
+    select,
+    input,
+    button {
+      width: 100%;
+    }
+  }
+
+  .cart-summary {
+    display: flex;
+    justify-content: end;
+  }
+ 
+}

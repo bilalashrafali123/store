@@ -16,9 +16,10 @@ const NavLinks = () => {
             <Link to="/pages" >Pages</Link>
             <Link to="/contact" >Contact</Link>
             <Link to="/detail" >Detail</Link>
-            <Link to="/login" >Login</Link>
-        
-            <a href="#">
+            <Link to="/login" >Login</Link>  
+            <Link to="/order" >Order</Link> 
+
+          <a href="#">
               <i className="fa-solid fa-bag-shopping"></i>
             </a>
             <a href="#">
