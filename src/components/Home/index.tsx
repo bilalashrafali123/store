@@ -18,6 +18,7 @@ const Home = () => {
             <Card />
             <Card />
             <Card />
+            <Card />
           </div>
         </div>
       </div>
