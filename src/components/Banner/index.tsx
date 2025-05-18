@@ -1,17 +1,17 @@
-import "./index.scss"
+import "./index.scss";
 
 interface IBannerProps {
-  title : string;
+  title: string;
 }
 
-const Banner = (props:IBannerProps) => {
+const Banner = (props: IBannerProps) => {
   return (
     <div className="store-background">
-    <div className="container">
-      <h1>{props.title}</h1>
+      <div className="container">
+        <h1>{props.title}</h1>
+      </div>
     </div>
-  </div>
-  ) 
-}
+  );
+};
 
-export default  Banner
+export default Banner;

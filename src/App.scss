@@ -11,78 +11,75 @@
   margin: 0 auto;
 }
 
+@media (max-width: 900px) {
+  .footer-container {
+    justify-content: center;
 
+    .footer-box {
+      flex: 1 1 45%;
+      margin: 15px 10px;
+    }
+  }
+}
 
-  @media (max-width: 900px) {
-    .footer-container {
-      justify-content: center;
+@media (max-width: 600px) {
+  // padding: 30px 10px 10px;
 
-      .footer-box {
-        flex: 1 1 45%;
-        margin: 15px 10px;
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+
+    .footer-box {
+      flex: 1 1 100%;
+      margin: 10px 0;
+      text-align: center;
+
+      &.newsletter {
+        .newsletter-input {
+          flex-direction: column;
+
+          input {
+            padding: 10px;
+            margin-bottom: 10px;
+          }
+
+          button {
+            width: 100%;
+            padding: 10px 0;
+          }
+        }
+      }
+
+      &.instagram {
+        .insta-images {
+          justify-content: center;
+          gap: 8px;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+
+      &.follow {
+        .social-icons {
+          justify-content: center;
+
+          a {
+            font-size: 22px;
+            margin: 0 8px;
+          }
+        }
       }
     }
   }
 
-  @media (max-width: 600px) {
-    // padding: 30px 10px 10px;
-
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-
-      .footer-box {
-        flex: 1 1 100%;
-        margin: 10px 0;
-        text-align: center;
-
-        &.newsletter {
-          .newsletter-input {
-            flex-direction: column;
-
-            input {
-              padding: 10px;
-              margin-bottom: 10px;
-            }
-
-            button {
-              width: 100%;
-              padding: 10px 0;
-            }
-          }
-        }
-
-        &.instagram {
-          .insta-images {
-            justify-content: center;
-            gap: 8px;
-
-            img {
-              width: 40px;
-              height: 40px;
-            }
-          }
-        }
-
-        &.follow {
-          .social-icons {
-            justify-content: center;
-
-            a {
-              font-size: 22px;
-              margin: 0 8px;
-            }
-          }
-        }
-      }
-    }
-
-    .footer-bottom {
-      font-size: 12px;
-      padding-top: 15px;
-    }
+  .footer-bottom {
+    font-size: 12px;
+    padding-top: 15px;
   }
-
+}
 
 @media (max-width: 1200px) {
   .card-section {
@@ -166,9 +163,5 @@
         display: block;
       }
     }
-  }
-
-  .store-background {
-    display: none;
   }
 }

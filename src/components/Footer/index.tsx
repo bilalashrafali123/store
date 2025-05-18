@@ -20,7 +20,7 @@ const Footer = () => {
             <input type="email" placeholder="Enter Email" />
             <button>→</button>
           </div>
-        </div>
+        </div>``
         <div className="footer-box instagram">
           <h3>Instagram Feed</h3>
           <div className="insta-images">
