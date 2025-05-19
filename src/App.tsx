@@ -6,10 +6,9 @@ import NavBar from "./components/NavBar";
 import Detail from "./components/Detail";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
-import Order from "./components/Order";
 import Shop from "./components/Shop";
 import Login from "./components/Login";
-import Pages from "./components/Pages";
+import Cart from "./components/Cart";
 
 function App() {
   return (
@@ -20,14 +19,13 @@ function App() {
         <Route path="/detail" element={<Detail />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/order" element={<Order />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/pages" element={<Pages />} />
-      </Routes>
+     </Routes>
       <Footer />
     </>
   );
 }
 
-export default App; 
+export default App

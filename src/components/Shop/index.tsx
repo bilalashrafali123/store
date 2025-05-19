@@ -1,69 +1,93 @@
 import Banner from "../Banner";
+import Card from "../Card";
 import "./index.scss";
 
 const Shop = () => {
   return (
-    <div>
-      <Banner title="Shop" />
-      <div className="container">
-        <div className="product-layout">
-          <div className="product-image">
-            <img src="/src/shopbanner.jpg" alt="Product" />
-          </div>
-          <div className="product-details">
-            <h2>Faded SkyBlu Denim Jeans</h2>
-            <h3 className="price">$149.99</h3>
-            <p>
-              <strong>Category</strong>: Household
-            </p>
-            <p>
-              <strong>Availability</strong>: In Stock
-            </p>
-            <p className="description">
-              Mill Oil is an innovative oil filled radiator with the most modern
-              technology. If you are looking for something that can make your
-              interior look awesome, and at the same time give you the pleasant
-              warm feeling during the winter.
-            </p>
+    <>
+      <div>
+        <Banner title="Shop" />
+      </div>
 
-            <div className="product-action">
-              <div className="quantity-group">
-                <label>Quantity: {""}</label>
-                <input type="number" />
+      <div className="shop-category">
+        <div className="container">
+          <div className="shop-wrapper">
+            <div className="sidebar">
+              <h3 className="sidebar-title">Browse Categories</h3>
+              <ul className="category-list">
+                <li>
+                  Fruits and Vegetables <span>(53)</span>
+                </li>
+                <li>
+                  Meat and Fish <span>(53)</span>
+                </li>
+                <li>
+                  Cooking <span>(53)</span>
+                </li>
+                <li>
+                  Beverages <span>(24)</span>
+                </li>
+                <li>
+                  Home and Cleaning <span>(53)</span>
+                </li>
+                <li>
+                  Pest Control <span>(24)</span>
+                </li>
+                <li>
+                  Office Products <span>(77)</span>
+                </li>
+                <li>
+                  Beauty Products <span>(65)</span>
+                </li>
+                <li>
+                  Health Products <span>(29)</span>
+                </li>
+                <li>
+                  Pet Care <span>(29)</span>
+                </li>
+                <li>
+                  Home Appliances <span>(15)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="shop-content">
+              <div className="top-bar">
+                <select className="select-box">
+                  <option>Default sorting</option>
+                </select>
+                <select className="select-box">
+                  <option>Show 12</option>
+                </select>
+                <div className="pagination-bar">
+                  <button className="page-btn">
+                    <i className="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button className="page-btn active">1</button>
+                  <button className="page-btn">2</button>
+                  <button className="page-btn">3</button>
+                  <span style={{ color: "black" }}>...</span>
+                  <button className="page-btn">6</button>
+                  <button className="page-btn">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
               </div>
-              <button>Add to Cart</button>
+
+              <div className="product-grid card-styling">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+              </div>
             </div>
           </div>
         </div>
-        <div className="product-tabs">
-          <button className="active">Description</button>
-          <button>Specification</button>
-        </div>
-        <div className="product-info">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
-            dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s, when
-            an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but
-            also the leap into electronic typesetting, remaining essentially
-            unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
-          </p>
-        </div>
       </div>
-    </div>
-  );
+    </>
+  )
 };
 
 export default Shop;

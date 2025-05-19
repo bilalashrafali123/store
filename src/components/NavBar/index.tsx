@@ -1,6 +1,6 @@
 import NavLinks from "../NavLinks";
 import NavLogo from "../NavLogo";
-import "./index.scss"
+import "./index.scss";
 
 const NavBar = () => {
   return (

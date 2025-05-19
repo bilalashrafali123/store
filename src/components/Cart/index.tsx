@@ -1,7 +1,7 @@
 import Banner from '../Banner';
 import './index.scss';
 
-const Checkout = () => {
+const Cart = () => {
   return (
     <>
     <div>
@@ -87,4 +87,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default Cart;

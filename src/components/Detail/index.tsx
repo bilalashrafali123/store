@@ -1,106 +1,68 @@
 import Banner from "../Banner";
 import "./index.scss";
 
-const Details = () => {
+const Detail = () => {
   return (
-    <>
     <div>
     <Banner title="Details" />
-  </div>
-    <div className="cart-wrapper">
-      <div className="container">
-        <table className="cart-table">
-          <thead>
-            <tr>
-              <th className="product-table-heading">Product</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div className="product">
-                  <img src="/src/checkout.png" alt="Product" />
-                  <p>Minimalistic shop for multipurpose use</p>
-                </div>
-              </td>
-              <td>$360.00</td>
-              <td><input type="number"  /></td>
-              <td>$720.00</td>
-            </tr>
-            <tr>
-              <td>
-                <div className="product">
-                  <img src="/src/checkout.png" alt="Product" />
-                  <p>Minimalistic shop for multipurpose use</p>
-                </div>
-              </td>
-              <td>$360.00</td>
-              <td><input type="number" /></td>
-              <td>$720.00</td>
-            </tr>
-            <tr>
-              <td>
-                <div className="product">
-                  <img src="/src/checkout.png" alt="Product" />
-                  <p>Minimalistic shop for multipurpose use</p>
-                </div>
-              </td>
-              <td>$360.00</td>
-              <td><input type="number"  /></td>
-              <td>$720.00</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div className="cart-actions">
-          <button className="update">Update Cart</button>
-          <div className="coupon">
-            <input type="text" placeholder="Coupon Code" />
-            <button className="apply">Apply</button>
-            <button className="close">Close Coupon</button>
-          </div>
+    <div className="container">
+      <div className="product-layout">
+        <div className="product-image">
+          <img src="/src/shopbanner.jpg" alt="Product" />
         </div>
+        <div className="product-details">
+          <h2>Faded SkyBlu Denim Jeans</h2>
+          <h3 className="price">$149.99</h3>
+          <p>
+            <strong>Category</strong>: Household
+          </p>
+          <p>
+            <strong>Availability</strong>: In Stock
+          </p>
+          <p className="description">
+            Mill Oil is an innovative oil filled radiator with the most modern
+            technology. If you are looking for something that can make your
+            interior look awesome, and at the same time give you the pleasant
+            warm feeling during the winter.
+          </p>
 
-        <div className="cart-summary">
-          <div className="summary-details">
-            <div className="summary-row">
-              <span className="subtotal">Subtotal</span>
-              <span>$2160.00</span>
+          <div className="product-action">
+            <div className="quantity-group">
+              <label>Quantity: {""}</label>
+              <input type="number" />
             </div>
-            <div className="summary-row shipping-row">
-              <div className="end">
-              <div className="shipping-options">
-                <label><input type="radio" name="shipping" /> Flat Rate: $5.00</label>
-                <label><input type="radio" name="shipping" /> Free Shipping</label>
-                <label><input type="radio" name="shipping" /> Flat Rate: $10.00</label>
-                <label><input type="radio" name="shipping" /> Local Delivery: $2.00</label>
-              </div>
-              </div>
-            </div>
-            <div className="summary-selects">
-              <select>
-                <option>Bangladesh</option>
-              </select>
-              <select>
-                <option>Select a State</option>
-              </select>
-              <input type="text" placeholder="Postcode/Zipcode" />
-              <button>Update Details</button>
-            </div>
+            <button>Add to Cart</button>
           </div>
-        </div>
-
-        <div className="checkout-buttons">
-          <button className="continue">Continue Shopping</button>
-          <button className="checkout">Proceed to Checkout</button>
         </div>
       </div>
+      <div className="product-tabs">
+        <button className="active">Description</button>
+        <button>Specification</button>
+      </div>
+      <div className="product-info">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book. It has survived not
+          only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s
+          with the release of Letraset sheets containing Lorem Ipsum passages,
+          and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
+          dummy text of the printing and typesetting industry. Lorem Ipsum has
+          been the industry's standard dummy text ever since the 1500s, when
+          an unknown printer took a galley of type and scrambled it to make a
+          type specimen book. It has survived not only five centuries, but
+          also the leap into electronic typesetting, remaining essentially
+          unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently
+          with desktop publishing software like Aldus PageMaker including
+          versions of Lorem Ipsum.
+        </p>
+      </div>
     </div>
-    </>
-  );
+  </div>
+);
 };
-
-export default Details;
+export default Detail;

@@ -29,13 +29,19 @@
   justify-content: center;
   height: 100%;
 }
-
 .login-left {
   color: black;
   padding: 1rem;
   text-align: center;
+  background-image: url("/public/src/login.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .login-left-content {
+    padding: 2rem;
+    border-radius: 8px;
+
     h2 {
       margin-bottom: 1rem;
     }

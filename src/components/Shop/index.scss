@@ -1,136 +1,135 @@
 .container {
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .product-layout {
-    display: flex;
-    align-items: center; 
-    gap: 2rem;
-    margin-top: 30px;
-  
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  
-      .product-details {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  }
-  
-  .product-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    margin-top: 120px;
-  
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-  }
-  
-  .product-details {
-    flex: 1;
-    display: flex;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.product-layout {
+  display: flex;
+  align-items: center; 
+  gap: 2rem;
+  margin-top: 30px;
+
+  @media (max-width: 768px) {
     flex-direction: column;
-    justify-content: center;
-  
-    h2 {
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
-    }
-  
-    .price {
-      color: #ff9900;
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-  
-    p {
-      margin-bottom: 0.5rem;
-    }
-  
-    .description {
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-      color: #555;
-      font-size: 0.95rem;
-    }
-  
-    .product-action {
+    align-items: center;
+    text-align: center;
+
+    .product-details {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-  
-      .quantity-group {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-  
-        label {
-          font-size: 0.95rem;
-        }
-  
-        input {
-          width: 60px;
-          padding: 0.4rem;
-          border: 1px solid #ccc;
-          border-radius: 3px;
-        }
-      }
-  
-      button {
-        background-color: #ff6a00;
-        color: #fff;
-        border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        font-weight: bold;
-        cursor: pointer;
-        width: 163px;
-      }
+      align-items: center;
     }
   }
-  
-  .product-tabs {
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .price {
+    color: #ff9900;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  .product-action {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
-    justify-content: center;
-    background: #f3fafa;
-    padding: 10px;
-    margin-top: 60px;
-  
-    button {
-      padding: 0.5rem 1rem;
-      border: none;
-      font-weight: bold;
-      background: #eee;
-      cursor: pointer;
-      transition: background 0.3s;
-  
-      &.active {
-        background-color: orange;
-        color: white;
+
+    .quantity-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      label {
+        font-size: 0.95rem;
+      }
+
+      input {
+        width: 60px;
+        padding: 0.4rem;
+        border: 1px solid #ccc;
+        border-radius: 3px;
       }
     }
-  }
-  
-  .product-info {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    text-align: center;
-  
-    p {
-      font-size: 0.95rem;
-      color: #444;
+
+    button {
+      background-color: #ff6a00;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 163px;
     }
   }
-  
+}
+
+.product-tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  background: #f3fafa;
+  padding: 10px;
+  margin-top: 60px;
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bold;
+    background: #eee;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &.active {
+      background-color: orange;
+      color: white;
+    }
+  }
+}
+
+.product-info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+
+  p {
+    font-size: 0.95rem;
+    color: #444;
+  }
+}

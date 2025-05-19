@@ -10,12 +10,7 @@ const Contact = () => {
       <div className="contact-section">
         <div className="container">
           <div className="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8713351604133!2d-74.17446222409202!3d40.70834033887866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253cba10a90c5%3A0x41b9f276d2c83a4!2sNewark%20Liberty%20International%20Airport!5e0!3m2!1sen!2sus!4v1716031224727!5m2!1sen!2sus"
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-       
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8713351604133!2d-74.17446222409202!3d40.70834033887866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253cba10a90c5%3A0x41b9f276d2c83a4!2sNewark%20Liberty%20International%20Airport!5e0!3m2!1sen!2sus!4v1716031224727!5m2!1sen!2sus"></iframe>
           </div>
 
           <div className="contact-content">
