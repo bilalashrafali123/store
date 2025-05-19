@@ -15,6 +15,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
             ></iframe>
+       
           </div>
 
           <div className="contact-content">

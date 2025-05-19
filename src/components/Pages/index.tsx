@@ -79,6 +79,8 @@ const Pages = () => {
                 <Card />
                 <Card />
                 <Card />
+                <Card />
+                <Card />
               </div>
             </div>
           </div>
