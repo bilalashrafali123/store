@@ -11,7 +11,6 @@ import Shop from "./components/Shop";
 import Login from "./components/Login";
 import Pages from "./components/Pages";
 
-
 function App() {
   return (
     <>
@@ -25,10 +24,6 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
         <Route path="/pages" element={<Pages />} />
-     
-
-
-
       </Routes>
       <Footer />
     </>

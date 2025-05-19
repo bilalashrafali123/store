@@ -11,7 +11,7 @@ const Blog = () => {
         <div className="blog-list">
           <div className="blog-item">
             <div className="blog-meta">
-              <p>
+              <p className="blog-para">
                 Food, <span className="highlight">Technology</span>, Politics,
                 Lifestyle
               </p>

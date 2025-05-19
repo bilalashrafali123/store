@@ -12,7 +12,7 @@ const Details = () => {
         <table className="cart-table">
           <thead>
             <tr>
-              <th>Product</th>
+              <th className="product-table-heading">Product</th>
               <th>Price</th>
               <th>Quantity</th>
               <th>Total</th>
