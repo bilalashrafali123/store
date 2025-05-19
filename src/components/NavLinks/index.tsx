@@ -16,9 +16,11 @@ const NavLinks = () => {
         <Link to="/contact">Contact</Link>
         <Link to="/detail">Detail</Link>
         <Link to="/login">Login</Link>
+        <Link to="/checkout">Checkout</Link>
         <Link to="/cart">
           <i className="fa-solid fa-bag-shopping"></i>
         </Link>
+
 
         <a href="#">
           <i className="fa-solid fa-magnifying-glass"></i>

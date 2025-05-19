@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Shop from "./components/Shop";
 import Login from "./components/Login";
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/checkout" element={<Checkout />} />
+
      </Routes>
       <Footer />
     </>

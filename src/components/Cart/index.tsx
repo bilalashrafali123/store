@@ -5,123 +5,112 @@ const Cart = () => {
   return (
     <>
       <div>
-        <Banner title="Order" />
+        <Banner title="Add to cart" />
       </div>
-      <div className="checkout-wrapper">
+      <div className="cart-wrapper">
         <div className="container">
-          <p className="success-message">
-            Thank you. Your order has been received.
-          </p>
+          <table className="cart-table">
+            <thead>
+              <tr>
+                <th className="product-table-heading">Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div className="product">
+                    <img src="/src/checkout.png" alt="Product" />
+                    <p>Minimalistic shop for multipurpose use</p>
+                  </div>
+                </td>
+                <td>$360.00</td>
+                <td>
+                  <input type="number" />
+                </td>
+                <td>$720.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="product">
+                    <img src="/src/checkout.png" alt="Product" />
+                    <p>Minimalistic shop for multipurpose use</p>
+                  </div>
+                </td>
+                <td>$360.00</td>
+                <td>
+                  <input type="number" />
+                </td>
+                <td>$720.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="product">
+                    <img src="/src/checkout.png" alt="Product" />
+                    <p>Minimalistic shop for multipurpose use</p>
+                  </div>
+                </td>
+                <td>$360.00</td>
+                <td>
+                  <input type="number" />
+                </td>
+                <td>$720.00</td>
+              </tr>
+            </tbody>
+          </table>
 
-          <div className="info-section">
-            <table className="info-table">
-              <thead>
-                <tr>
-                  <th>Order Info</th>
-                  <th>Billing Address</th>
-                  <th>Shipping Address</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <strong>Order number</strong>:6002
-                  </td>
-                  <td>
-                    <strong>Street</strong>: 56/8
-                  </td>
-                  <td>
-                    <strong>Street</strong>: 56/8
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Date</strong>: Los Angeles
-                  </td>
-                  <td>
-                    <strong>City</strong>: Los Angeles
-                  </td>
-                  <td>
-                    <strong>City</strong>: Los Angeles
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Total</strong>: USD 2210
-                  </td>
-                  <td>
-                    <strong>Country</strong>: United States
-                  </td>
-                  <td>
-                    <strong>Country</strong>: United States
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Payment method</strong>: Check payments
-                  </td>
-                  <td>
-                    <strong>Postcode</strong>: 36952
-                  </td>
-                  <td>
-                    <strong>Postcode</strong>: 36952
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="cart-actions">
+            <button className="update">Update Cart</button>
+            <div className="coupon">
+              <input type="text" placeholder="Coupon Code" />
+              <button className="apply">Apply</button>
+              <button className="close">Close Coupon</button>
+            </div>
           </div>
 
-          <div className="order-details">
-            <h4>Order Details</h4>
-            <table>
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Quantity</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Pixelstore fresh Blackberry</td>
-                  <td>x 02</td>
-                  <td>$720.00</td>
-                </tr>
-                <tr>
-                  <td>Pixelstore fresh Blackberry</td>
-                  <td>x 02</td>
-                  <td>$720.00</td>
-                </tr>
-                <tr>
-                  <td>Pixelstore fresh Blackberry</td>
-                  <td>x 02</td>
-                  <td>$720.00</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>SUBTOTAL</strong>
-                  </td>
-                  <td></td>
-                  <td>$2160.00</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>SHIPPING</strong>
-                  </td>
-                  <td></td>
-                  <td>Flat rate: $50.00</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>TOTAL</strong>
-                  </td>
-                  <td></td>
-                  <td>
-                    <strong>$2210.00</strong>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="cart-summary">
+            <div className="summary-details">
+              <div className="summary-row">
+                <span className="subtotal">Subtotal</span>
+                <span>$2160.00</span>
+              </div>
+              <div className="summary-row shipping-row">
+                <div className="end">
+                  <div className="shipping-options">
+                    <label>
+                    Flat Rate: $5.00  <input type="radio" name="shipping" /> 
+                    </label>
+                    <label>
+                    Free Shipping <input type="radio" name="shipping" /> 
+                    </label>
+                    <label>
+                    Flat Rate: $10.00 <input type="radio" name="shipping" /> 
+                    </label>
+                    <label>
+                    Local Delivery: $2.00 <input type="radio" name="shipping" /> 
+                      
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="summary-selects">
+                <select>
+                  <option>Bangladesh</option>
+                </select>
+                <select>
+                  <option>Select a State</option>
+                </select>
+                <input type="text" placeholder="Postcode/Zipcode" />
+                <button>Update Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="checkout-buttons">
+            <button className="continue">Continue Shopping</button>
+            <button className="checkout">Proceed to Checkout</button>
           </div>
         </div>
       </div>
