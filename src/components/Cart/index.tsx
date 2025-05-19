@@ -80,17 +80,17 @@ const Cart = () => {
                 <div className="end">
                   <div className="shipping-options">
                     <label>
-                    Flat Rate: $5.00  <input type="radio" name="shipping" /> 
+                      Flat Rate: $5.00 <input type="radio" name="shipping" />
                     </label>
                     <label>
-                    Free Shipping <input type="radio" name="shipping" /> 
+                      Free Shipping <input type="radio" name="shipping" />
                     </label>
                     <label>
-                    Flat Rate: $10.00 <input type="radio" name="shipping" /> 
+                      Flat Rate: $10.00 <input type="radio" name="shipping" />
                     </label>
                     <label>
-                    Local Delivery: $2.00 <input type="radio" name="shipping" /> 
-                      
+                      Local Delivery: $2.00{" "}
+                      <input type="radio" name="shipping" />
                     </label>
                   </div>
                 </div>
