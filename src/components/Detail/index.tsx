@@ -8,7 +8,7 @@ const tabs = {
 };
 
 const Detail = () => {
-  const [Tab, setTab] = useState(tabs.description);
+  const [tab, setTab] = useState(tabs.description);
 
   return (
     <div>
@@ -46,13 +46,13 @@ const Detail = () => {
 
         <div className="product-tabs">
           <button
-            className={Tab === tabs.description ? "active" : ""}
+            className={tab === tabs.description ? "active" : ""}
             onClick={() => setTab(tabs.description)}
           >
             Description
           </button>
           <button
-            className={Tab === tabs.specification ? "active" : ""}
+            className={tab === tabs.specification ? "active" : ""}
             onClick={() => setTab(tabs.specification)}
           >
             Specification
@@ -85,7 +85,7 @@ const Detail = () => {
           </div>
         )}
 
-        {Tab === tabs.specification && (
+        {tab === tabs.specification && (
           <div className="product-specs">
             <table>
               <tbody>
