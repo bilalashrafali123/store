@@ -3,7 +3,7 @@
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-}
+  }
 
   .shop-category {
     margin-top: 40px;
@@ -117,7 +117,7 @@
       gap: 20px;
 
       .product-card {
-       background-color: #d5d8f3;
+        background-color: #d5d8f3;
         height: 300px;
         display: flex;
         align-items: center;
@@ -128,7 +128,6 @@
     }
   }
 
-  
   @media (max-width: 992px) {
     .sidebar {
       width: 100%;
@@ -145,7 +144,7 @@
 
       .product-grid {
         .product-card {
-          flex: 1 1 48%
+          flex: 1 1 48%;
         }
       }
 
@@ -164,13 +163,11 @@
     }
   }
 
-  
   @media (max-width: 576px) {
     .shop-content {
       .product-grid {
         .product-card {
-          width: 100%; 
-          
+          width: 100%;
         }
       }
 

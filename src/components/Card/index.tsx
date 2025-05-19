@@ -14,19 +14,24 @@ const Card = () => {
         </span>
       </p>
       <div className="icons">
-        <span>
-          <i className="fa-solid fa-cart-shopping"></i>
-        </span>
-        <span>
-          <i className="fa-solid fa-heart"></i>
-        </span>
-        <span>
-          <i className="fa-solid fa-bookmark"></i>
-        </span>
-        <span>
-          <i className="fa-solid fa-thumbs-up"></i>
-        </span>
-      </div>
+  <span className="icon-with-text">
+    <i className="fa-solid fa-cart-shopping"></i>
+    <span className="icon-text">Add to Cart</span>
+  </span>
+  <span className="icon-with-text">
+    <i className="fa-solid fa-heart"></i>
+    <span className="icon-text">Wishlist</span>
+  </span>
+  <span className="icon-with-text">
+    <i className="fa-solid fa-bookmark"></i>
+    <span className="icon-text">Save</span>
+  </span>
+  <span className="icon-with-text">
+    <i className="fa-solid fa-thumbs-up"></i>
+    <span className="icon-text">Like</span>
+  </span>
+</div>
+
     </div>
   );
 };

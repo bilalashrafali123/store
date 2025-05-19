@@ -6,7 +6,6 @@
   margin-top: 20px;
 }
 
-
 .card {
   width: 255px;
 
@@ -16,23 +15,8 @@
     object-fit: cover;
   }
 
-  .icons {
-    display: flex;
-    gap: 15px;
+  .card-text {
     margin-top: 10px;
-
-    i {
-      border: 1px solid grey;
-      border-radius: 20px;
-      padding: 5px;
-      background-color: #828bb2;
-      color: #fff;
-      cursor: pointer;
-
-      &:hover {
-        background-color: orange;
-      }
-    }
   }
 
   .money {
@@ -42,6 +26,48 @@
 
     span {
       color: rgb(189, 189, 189);
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+
+    .icon-with-text {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      transition: all 0.3s ease;
+
+      i {
+        border: 1px solid grey;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: #828bb2;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f8a01e;
+        }
+      }
+
+      .icon-text {
+        width: 0;
+        margin-left: 0;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #333;
+        font-size: 0.85rem;
+      }
+
+      &:hover .icon-text {
+        opacity: 1;
+        width: auto;
+        margin-left: 8px;
+      }
     }
   }
 }

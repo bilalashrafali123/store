@@ -7,9 +7,9 @@
 .login-wrapper {
   min-height: 100vh;
   padding: 1rem;
-  padding-top: 90px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .login-container {
@@ -29,6 +29,7 @@
   justify-content: center;
   height: 100%;
 }
+
 .login-left {
   color: black;
   padding: 1rem;
@@ -52,7 +53,7 @@
     }
 
     button {
-      background: orange;
+      background: #f8a01e;
       border: none;
       padding: 0.6rem 1.5rem;
       color: #fff;
@@ -93,7 +94,7 @@
     }
 
     button {
-      background: linear-gradient(to right, orange, darkorange);
+      background: #f8a01e;
       color: #fff;
       border: none;
       padding: 0.75rem;
@@ -116,22 +117,35 @@
   .login-container {
     flex-direction: column;
     height: auto;
+    width: 100%;
+    max-width: 500px;
     margin-top: 50px;
+    box-shadow: none;
   }
 
-  .login-left,
+  .login-left {
+    display: none;
+  }
+
   .login-right {
     width: 100%;
     height: auto;
     padding: 2rem 1rem;
-  }
+    justify-content: center;
 
-  .login-left {
-    order: 2;
-  }
+    h3 {
+      font-size: 1.4rem;
+    }
 
-  .login-right {
-    order: 1;
+    form {
+      width: 100%;
+
+      input,
+      button {
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+    }
   }
 }
 
