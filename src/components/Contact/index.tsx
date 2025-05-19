@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       <div>
-        <Banner title="Login" />
+        <Banner title="Contact" />
       </div>
       <div className="contact-section">
         <div className="container">

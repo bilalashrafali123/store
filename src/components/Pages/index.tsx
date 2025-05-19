@@ -6,7 +6,7 @@ const Pages = () => {
   return (
     <>
       <div>
-        <Banner title="Detail" />
+        <Banner title="Pages" />
       </div>
 
       <div className="shop-category">

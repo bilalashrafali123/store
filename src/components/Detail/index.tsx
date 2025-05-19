@@ -1,7 +1,12 @@
+import Banner from "../Banner";
 import "./index.scss";
 
 const Details = () => {
   return (
+    <>
+    <div>
+    <Banner title="Details" />
+  </div>
     <div className="cart-wrapper">
       <div className="container">
         <table className="cart-table">
@@ -94,6 +99,7 @@ const Details = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
