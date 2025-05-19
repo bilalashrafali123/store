@@ -59,7 +59,7 @@ const Detail = () => {
           </button>
         </div>
 
-        {Tab === tabs.description && (
+        {tab === tabs.description && (
           <div className="product-info">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
