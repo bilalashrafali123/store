@@ -41,7 +41,7 @@ const Cart = () => {
                 </td>
                 <td>$360.00</td>
                 <td>
-                  <input type="number" />
+                  <input type="number" value={1} />
                 </td>
                 <td>$720.00</td>
               </tr>
@@ -54,7 +54,7 @@ const Cart = () => {
                 </td>
                 <td>$360.00</td>
                 <td>
-                  <input type="number" />
+                  <input type="number" value={1} />
                 </td>
                 <td>$720.00</td>
               </tr>
@@ -64,7 +64,7 @@ const Cart = () => {
           <div className="cart-actions">
             <button className="update">Update Cart</button>
             <div className="coupon">
-              <input type="text" placeholder="Coupon Code" />
+              <input type="text" placeholder="Coupon Code" value={1} />
               <button className="apply">Apply</button>
               <button className="close">Close Coupon</button>
             </div>

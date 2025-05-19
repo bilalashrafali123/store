@@ -29,7 +29,7 @@ const Detail = () => {
             <div className="product-action">
               <div className="quantity-group">
                 <label>Quantity: {""}</label>
-                <input type="number" />
+                <input type="number"  value={1}/>
               </div>
               <button>Add to Cart</button>
             </div>
